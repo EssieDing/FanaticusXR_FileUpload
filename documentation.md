@@ -177,7 +177,7 @@ You can check the lambda function like file-upload-system-backend and s3uploader
 
 2. Two ways to encapsulate file content:
 
-   **FormData(): **
+   **FormData():**
 
    Provides a way to easily construct a set of key/value pairs representing form fields and their values, which can then be easily sent using the XMLHttpRequest.send() method. It uses the same format a form would use if the encoding type were set to "multipart/form-data".
 
