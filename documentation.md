@@ -4,6 +4,8 @@ This document is for Fanaticus XR summer intern, maily focusing on file upload s
 
 ## Structure
 
+There are mainly two directories in the repo, the file-upload-system used the [upload](#1) and galaxy-app used the [presigned url](#2).
+
 I have developed the web frontend and backend separately.
 
 The frontend pages are in React.
@@ -31,6 +33,8 @@ https://www.youtube.com/watch?v=ozX3GbUOfF8 and https://aws.amazon.com/blogs/com
 https://aws.amazon.com/blogs/compute/uploading-large-objects-to-amazon-s3-using-multipart-upload-and-transfer-acceleration/
 
 This three materials focus on three different ways to upload files to s3 bucket.
+
+<span id = "1"/>
 
 ### 1. Upload with API Gateway and Lambda:
 
@@ -69,6 +73,8 @@ Limits:
 To upload different types of files, we can set the **Binary Media Types** as  **\*/\*** for the serverless API (but the intergration type method should be AWS Service instead of Lambda function). Check the https://repost.aws/knowledge-center/api-gateway-upload-image-s3 for details.
 
 This way can be extended to multiple types of files.
+
+<span id = "2"/>
 
 ### 2. Use pre-signed S3 URL to upload
 
