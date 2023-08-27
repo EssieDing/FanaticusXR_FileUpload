@@ -4,9 +4,9 @@ This document is for Fanaticus XR summer intern, maily focusing on file upload s
 
 ## Structure
 
-There are mainly two directories in the repo, the file-upload-system used the [upload](#1) and galaxy-app used the [presigned url](#2).
+There are mainly two directories in the repo, the file-upload-system used the [Upload with API Gateway and Lambda](#1) and galaxy-app used the [Upload with Presigned URL](#2).
 
-I have developed the web frontend and backend separately.
+In galaxy-app, I have developed the web frontend and backend separately.
 
 The frontend pages are in React.
 
@@ -20,7 +20,9 @@ So, http://localhost:3000/ will show you the test app for file uploading functio
 
 To deploy to aws static website hosting, you can follow https://aws.amazon.com/getting-started/projects/build-serverless-web-app-lambda-apigateway-s3-dynamodb-cognito/module-1/. in terminal,  you can run `npm run build`, which runs the build field from the `package.json` `scripts` field, compile the app into folder /build, so you can put the files onto the production server. 
 
+The backend are developed using Nodejs in Lambda function and Gateway API. You can check the aws Gatway API and lambda function with the name S3Uploader. 
 
+For file-upload-system, please check name file-upload-system-backend.
 
 ## S3 bucket Uploading logic
 
