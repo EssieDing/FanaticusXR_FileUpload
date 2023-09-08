@@ -190,9 +190,12 @@ You can check the lambda function like file-upload-system-backend and s3uploader
    ## About Download
    There are some materials that I found interesting and has some similar contents as our upload functions:
    https://awstut.com/en/2022/12/30/upload-download-files-to-from-s3-with-presigned-url-en/#toc1
+   
    https://saturncloud.io/blog/how-to-download-a-file-from-amazon-s3-using-rest-api/
+   
    https://www.geeksforgeeks.org/how-to-upload-and-download-files-from-aws-s3-using-python/
-   It used the same presigned url method or just the normal methods to download specific files.
+   
+   It used the same presigned url method or just the normal http methods (we can do it as we are the one has the AWS credentials to the S3 bucket)to download specific files.
 
    
 
