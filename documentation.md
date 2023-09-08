@@ -187,6 +187,13 @@ You can check the lambda function like file-upload-system-backend and s3uploader
 
    The **`Blob`** object represents a blob, which is a file-like object of immutable, raw data; they can be read as text or binary data, or converted into a [`ReadableStream`](https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream) so its methods can be used for processing the data. To construct a `Blob` from other non-blob objects and data, use the [`Blob()`](https://developer.mozilla.org/en-US/docs/Web/API/Blob/Blob) constructor.
 
+   ## About Download
+   There are some materials that I found interesting and has some similar contents as our upload functions:
+   https://awstut.com/en/2022/12/30/upload-download-files-to-from-s3-with-presigned-url-en/#toc1
+   https://saturncloud.io/blog/how-to-download-a-file-from-amazon-s3-using-rest-api/
+   https://www.geeksforgeeks.org/how-to-upload-and-download-files-from-aws-s3-using-python/
+   It used the same presigned url method or just the normal methods to download specific files.
+
    
 
 
